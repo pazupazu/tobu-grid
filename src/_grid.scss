@@ -1,0 +1,73 @@
+.grid {
+  display: grid;
+}
+.grid-asakusa {
+  grid-template: 
+    "header header"
+    "title ph1"
+    "ph2 ph1"
+    "ph3 comment"
+  ;
+}
+
+.asakusa-header {
+  grid-area: header;
+}
+.asakusa-title {
+  grid-area: title;
+}
+.asakusa-photo-1 {
+  grid-area: ph1;
+}
+.asakusa-photo-2 {
+  grid-area: ph2;
+}
+.asakusa-photo-3 {
+  grid-area: ph3;
+}
+.asakusa-comment {
+  grid-area: comment;
+}
+.grid-shinkyo {
+  grid-template: 
+    "header"
+    "title"
+    "ph1"
+    "ph2"
+    "ph3"
+    "comment"
+  ;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-shinkyo {
+    grid-template: 
+      "header header"
+      "title ph1"
+      "ph2 ph1"
+      "comment ph3"
+    ;
+  }
+}
+
+
+
+
+.shinkyo-header {
+  grid-area: header;
+}
+.shinkyo-title {
+  grid-area: title;
+}
+.shinkyo-photo-1 {
+  grid-area: ph1;
+}
+.shinkyo-photo-2 {
+  grid-area: ph2;
+}
+.shinkyo-photo-3 {
+  grid-area: ph3;
+}
+.shinkyo-comment {
+  grid-area: comment;
+}
